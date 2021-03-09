@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   
+    <title> FAQ</title>
+
+    <link rel="stylesheet" href="css/faq.css">
+</head>
+<body>
+
+    <main class="wrapper">
+        <div class="image__wrapper">
+            <div class="image__wrapper_inner">
+            
+            </div>
+            <img class="box" src="img/illustration-box-desktop.svg" alt="box">
+        </div>
+    <div class="accordion__wrapper">
+        <h1 class="title__accordion">FAQs</h1>
+        <div class="questions__accordions">
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        What is the purpose of this website?
+                    </h3>
+                    <img src="img/icon-arrow-down.svg" >
+                </div>
+                <div class="answer">
+                    Having a website for your hospital means, patients are always able to find you anytime and anywhere. 
+                    This means that they can get all the information even after business hours. Your website will continue 
+                    to serve your patients and secure new ones.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        Why should i use this website?
+                    </h3>
+                    <img src="img/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    A digital healthcare software ensures that they can access patient information in real-time using their
+                    desktop online or their mobile device. Access can be configured for added security, granting access to 
+                    only those who are directly involved in patient care.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How do I reset my password?
+                    </h3>
+                    <img src="img/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    Click “Forgot password” from the signin page. A reset password link will be emailed to you.
+                </div>
+            </div>
+
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How can i signup?
+                    </h3>
+                    <img src="img/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    You can signup in the signup section.Some credentials would be required and if they are approved you will be approved.
+                </div>
+            </div>
+            
+            <div class="question-answer__accordion">
+                <div class="question">
+                    <h3 class="title__question">
+                        How can i share my medical records?
+                    </h3>
+                    <img src="img/icon-arrow-down.svg" >
+                </div>
+                <div class="answer ">
+                    You may share your reports/medical records  by emailing the same to <b>careforyou@gmail.com</b> or by using the <b>chatbot.</b>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </main>
+    
+    <script>
+    this.addEventListener("DOMContentLoaded", () =>{
+    const questions = document.querySelectorAll(".question")
+    questions.forEach((question) => question.addEventListener("click", () =>{
+  
+        if(question.parentNode.classList.contains("active")){
+            question.parentNode.classList.toggle("active")
+        }
+    else{
+    questions.forEach(question => question.parentNode.classList.remove("active"))
+    question.parentNode.classList.add("active")
+        }
+
+    }))
+}) 
+
+    </script>
+</body>
+</html>

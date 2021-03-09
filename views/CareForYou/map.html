@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Nearby-Hospital
+        </title>
+        <link rel="stylesheet" href="./css/map.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="./data.js"></script>
+        <script src="./magic.js"></script>
+        
+    </head>
+    <body>
+    
+  </section>
+        <div class="title">
+             NEARBY HOSPITALS
+        </div>
+       <div class="search-container"  >
+            <div class="search">
+                <input id="zip-code-input"  type="text" placeholder="enter picode e.g. 110062 or 110050"></input>
+                <i class="fas fa-search" onclick="searchHospitals()"></i>
+            </div> 
+        </div>
+        <div class="hospitals-list-container">
+            <div class="hospitals-list">
+               
+            </div>
+        </div>
+       
+        <div id="map"></div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCzPMaJss7fAe0C-weO3Q1lzGZ2B3zy4A&callback=initMap"
+          async defer></script>
+    </body>
+</html>

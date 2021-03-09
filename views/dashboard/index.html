@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title> DASHBOARD</title>
+    
+  </head>
+
+   <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    !(function () {
+      var t = (window.driftt = window.drift = window.driftt || []);
+      if (!t.init) {
+        if (t.invoked)
+          return void (
+            window.console &&
+            console.error &&
+            console.error("Drift snippet included twice.")
+          );
+        (t.invoked = !0),
+          (t.methods = [
+            "identify",
+            "config",
+            "track",
+            "reset",
+            "debug",
+            "show",
+            "ping",
+            "page",
+            "hide",
+            "off",
+            "on",
+          ]),
+          (t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }),
+          t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }),
+          (t.load = function (t) {
+            var e = 3e5,
+              n = Math.ceil(new Date() / e) * e,
+              o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.crossorigin = "anonymous"),
+              (o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js");
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          });
+      }
+    })();
+    drift.SNIPPET_VERSION = "0.3.1";
+    drift.load("k44tmyexwdax");
+  </script>
+  <!-- End of Async Drift Code -->
+  <body id="body">
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav_icon" onclick="toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="navbar__left">
+          <!-- Display User Name -->
+          <a href="#">Your Profile</a> 
+         
+        </div>
+        <div class="navbar__right">
+          <a href="#">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <img width="30" src="assets/1.png" alt="" />
+            <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+          </a>
+        </div>
+      </nav>
+
+      <main>
+        <div class="main__container">
+          <!-- MAIN TITLE STARTS HERE -->
+
+          <div class="main__title">
+            <img src="assets/1.png" alt="" />
+            <div class="main__greeting">
+             
+              <p>Welcome  <span id="greet">  </span>  to your dashboard</p>
+            </div>
+          </div>
+
+          <!-- MAIN TITLE ENDS HERE -->
+
+          <!-- MAIN CARDS STARTS HERE -->
+          <div class="main__cards" >
+            <div class="card user_details" data-after="dada">
+              <i
+                class="fa fa-user-o fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">My details</p>
+                <!--<span class="font-bold text-title">578</span> -->
+                <!-- <p>Name <span id="user_name"></span></p>
+                <p>Username <span id="user_username"></span></p>
+                <p>Email <span id="user_email"></span></p> -->
+              </div>
+              <div class="card_inner bottom">
+                <!-- <p class="text-primary-p">My details</p> -->
+                <!-- <span class="font-bold text-title">578</span> --> 
+                <p>Name   :    <span id="user_name"></span></p>
+                <p>Username   :    <span id="user_username"></span></p>
+                <p>Email   :   <span id="user_email"></span></p>
+                <p>Phone   :   <span id="user_phone"></span></p>
+              </div>
+            </div>
+            <!-- <div class="card abs">
+              <i
+                class="fa fa-user-o fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">My details</p>
+                <span class="font-bold text-title">578</span> -->
+                <!-- <p>Name <span id="user_name"></span></p>
+                <p>Username <span id="user_username"></span></p>
+                <p>Email <span id="user_email"></span></p>
+              </div>
+            </div> -->
+
+            <div class="card apmt"  data-after="">
+              <i class="fa fa-calendar fa-2x text-red" aria-hidden="true"></i>
+              <div class="card_inner">
+                <p class="text-primary-p">My Appointments</p>
+                <!---<span class="font-bold text-title">2467</span>-->
+                <!-- <p><span id="apmt"></span></p> -->
+              </div>
+              <div class="card_inner bottom">
+                <!-- <p class="text-primary-p">My details</p> -->
+                <!-- <span class="font-bold text-title">578</span> --> 
+                <p id="isBook">Appointments   :- <br>   <span id="user_book"></span></p>
+                <!-- <p>Username   :    <span id="user_username"></span></p>
+                <p>Email   :   <span id="user_email"></span></p>
+                <p>Phone   :   <span id="user_phone"></span></p> -->
+              </div>
+            </div>
+
+            <!-- <div class="card abs">
+              <i
+                class="fa fa-user-o fa-2x text-lightblue"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">My details</p>
+                <span class="font-bold text-title">578</span> -->
+                <!-- <p>Name <span id="user_name"></span></p>
+                <p>Username <span id="user_username"></span></p>
+                <p>Email <span id="user_email"></span></p>
+              </div>
+            </div> -->
+
+         <!-- <div class="card">
+              <i
+                class="fa fa-video-camera fa-2x text-yellow"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Available Doctors</p>
+                <span class="font-bold text-title">340</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <i
+                class="fa fa-thumbs-up fa-2x text-green"
+                aria-hidden="true"
+              ></i>
+              <div class="card_inner">
+                <p class="text-primary-p">Number of Likes</p>
+                <span class="font-bold text-title">645</span>
+              </div>
+            </div>
+          </div> -->
+          <!-- MAIN CARDS ENDS HERE -->
+
+          <!-- CHARTS STARTS HERE -->
+      <!--    <div class="charts">
+            <div class="charts__left">
+              <div class="charts__left__title">
+                <div>
+                  <h1>Daily Reports</h1>
+                  <p>Cupertino, California, USA</p>
+                </div>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+              <div id="apex1"></div>
+            </div>
+
+            <div class="charts__right">
+              <div class="charts__right__title">
+                <div>
+                  <h1>Stats Reports</h1>
+                  <p>Cupertino, California, USA</p>
+                </div>
+                <i class="fa fa-usd" aria-hidden="true"></i>
+              </div>
+
+              <div class="charts__right__cards">
+                <div class="card1">
+                  <h1>Income</h1>
+                  <p>$75,300</p>
+                </div>
+
+                <div class="card2">
+                  <h1>Sales</h1>
+                  <p>$124,200</p>
+                </div>
+
+                <div class="card3">
+                  <h1>Users</h1>
+                  <p>3900</p>
+                </div>
+
+                <div class="card4">
+                  <h1>Orders</h1>
+                  <p>1881</p>
+                </div>
+              </div>
+            </div>
+          </div>  --->
+          <!-- CHARTS ENDS HERE -->
+        </div>
+      </main>
+
+      <div id="sidebar">
+        <div class="sidebar__title">
+          <div class="sidebar__img" id="toShow">
+            
+            <!-- <h1>CareForYou</h1> -->
+            
+          </div>
+          <i
+            onclick="closeSidebar()"
+            class="fa fa-times"
+            id="sidebarIcon"
+            aria-hidden="true"
+          ></i>
+        </div>
+
+        <div class="sidebar__menu">
+          <div class="sidebar__link active_menu_link">
+            <i class="fa fa-home"></i>
+            <a href="#">Dashboard</a>
+              
+          </div>
+          <div class="sidebar__logout">
+            <a href="../index2.html">Back To HomePage</a>
+          </div>
+       
+       <!----   <h2>MNG</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-user-secret" aria-hidden="true"></i>
+            <a href="#">Admin Management</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-building-o"></i>
+            <a href="#">Company Management</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-wrench"></i>
+            <a href="#">Employee Management</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-archive"></i>
+            <a href="#">Warehouse</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-handshake-o"></i>
+            <a href="#">Contracts</a>
+          </div>
+          <h2>LEAVE</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-question"></i>
+            <a href="#">Requests</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-sign-out"></i>
+            <a href="#">Leave Policy</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-calendar-check-o"></i>
+            <a href="#">Special Days</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-files-o"></i>
+            <a href="#">Apply for leave</a>
+          </div>
+          <h2>PAYROLL</h2>
+          <div class="sidebar__link">
+            <i class="fa fa-money"></i>
+            <a href="#">Payroll</a>
+          </div>
+          <div class="sidebar__link">
+            <i class="fa fa-briefcase"></i>
+            <a href="#">Paygrade</a>
+          </div> -->
+          <div class="sidebar__logout">
+            <i class="fa fa-power-off"></i>
+            <a href="../index.html">Log out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="script.js"></script>
+    <script>
+      const toShow = document.getElementById('toShow');
+      const greet = document.getElementById('greet');
+      const user_d = document.querySelector('.user_details');
+      const apmt = document.querySelector('.apmt');
+      const name = document.getElementById('user_name');
+      const username = document.getElementById('user_username');
+      const email = document.getElementById('user_email');
+      const phone = document.getElementById('user_phone');
+      const book = document.getElementById('user_book');
+      const isBook = document.getElementById('isBook');
+      const token = localStorage.token;
+      // console.log(token);
+
+      var base64Url = token.split('.')[1];
+      var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+      var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+          return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+
+      const user = JSON.parse(jsonPayload);
+      // console.log(JSON.parse(jsonPayload)); 
+      // console.log(user);
+      toShow.innerHTML = `<h1>${user.name}</h1`;
+      greet.textContent  = user.name;
+      name.textContent = user.name;
+      username.textContent = user.username;
+      email.textContent = user.email;
+      phone.textContent = user.phone;
+      // book.textContent = user.bookings[0].booking.date.substr(0,10);
+      
+      console.log(user.bookings.length);
+      if(user.bookings.length===0){
+        isBook.innerHTML = "No Bookings Currently";
+      }
+      else{
+        user.bookings.forEach(func);
+        // console.log(user.bookings);
+        function func(booking,i){
+        // console.log(booking);
+        book.innerHTML += `<br> Booking ${i+1} : <br>  Reason -> ${booking.booking.reason} <br>  Date -> ${booking.booking.date.substr(0,10)} <br>  Time -> ${booking.booking.time} <br>`;
+      }
+      }
+      
+      
+    </script>
+  </body>
+</html>
+
