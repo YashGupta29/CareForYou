@@ -7,7 +7,7 @@
 
 * login/signup <br>
 * Appointment Booking <br>
-* *Chatbot <br>
+* Chatbot <br>
 * Contact us <br>
 * Location of nearest hospital. <br>
 * Availability of bed <br>
