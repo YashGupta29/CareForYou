@@ -31,7 +31,6 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 Restart your app *(ctrl+c),* then `npm start` aaaaaand you're done - test it and please tell us how it worked 🖖 🎉
 
