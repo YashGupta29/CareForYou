@@ -1,18 +1,18 @@
 # 🏥 CareForYou
 
--> Your “Virtual Clinic”. A patient focussed website that allows people to communicate with medical experts without having to go to the hospital.
+-> Your “Virtual Clinic”. A patient focussed website that allows people to communicate with medical experts without having to go to the hospital.<br>
 -> Our website links users to everything they need to take care of themselves and their families, including finding the nearby hospitals with the availability of beds there,        scheduling medical appointments, receiving medications, a separate dashboard for a specific user after signup where their details and appointments are visible, a chatbot        feature which would allow user to directly contact with the medical experts. A separate section where the users can contact anytime and send their message. Live statistics      along with health tips are provided. This way this website is a complete package of virtual hospitals.
 
 ## Features
 
--> login/signup 
--> Appointment Booking
--> Chatbot
--> Contact us
--> Location of nearest hospital.
--> Availability of bed
--> Live Statistics
--> FAQs
+-> login/signup <br>
+-> Appointment Booking <br>
+-> Chatbot <br>
+-> Contact us <br>
+-> Location of nearest hospital. <br>
+-> Availability of bed <br>
+-> Live Statistics <br>
+-> FAQs <br>
 
 ## 👇 Download Files
 * go to our github repository: https://github.com/YashGupta29/CareForYou
