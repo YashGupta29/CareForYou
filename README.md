@@ -22,7 +22,7 @@ npm install
 ## 😻 Run CareForYou
 
 ```bash
-# to start chatmosphere, type
+# to start CareForYou, type
 npm start
 # or if you prefer yarn
 yarn start
